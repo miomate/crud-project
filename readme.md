@@ -4,14 +4,20 @@ CRUD vanilla JS project
 
 ### Task
 
-Array with data objects is displayed as HTML table. Buttons in the table head allows to sort the rows.
+Web app, which displays array's data (objects) as HTML table. Buttons in the table head allows to sort the rows.
+
+Table content: ID number of intelligence agents, their names and status.
+| Agent's ID | Agents Name     | Agent's status |
+| ---------- | --------------- | -------------- |
+| 999        | Eric Cartman    | inactive       |
+| 155        | Kyle Broflovski | active         |
 
 ### Features
 
 1. Table head with sort buttons
-   ..\* Sort the items of an array, alphabetic and numeric, ascendig or descending. Highlight active sorting button/methode.
+   * Sort the items of an array, alphabetic and numeric, ascendig or descending. Highlight active sorting button/methode
 2. All CRUD features
-3. Select row checkbox for highlighting
+3. In the first row checkbox, which highlight the whole row
 4. Display number of elements in the table's footer
 5. Dropdown menu in footer to limit amount of displayed rows
 
@@ -24,8 +30,8 @@ Array with data objects is displayed as HTML table. Buttons in the table head al
 
 ### Milestones
 
-- Project praperation (set up project, lint/prettier, git repo)
-- To ease tasting: Data from inputfields safed to array as object, displayed in table
+- Project preparation (set up project, lint/prettier, git repo)
+- To ease testing: Data from inputfields safed to array as object, displayed in table
 - HTML Table build based on data in array
 - Sort through array (A-Z),
 - Style
