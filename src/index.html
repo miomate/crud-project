@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Text">
+  <meta name="keywords" content="Key words">
+  <meta name="author" content="Name Author">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="inputFields">
+      <form onsubmit="event.preventDefault(); formSubmit();" autocomplete="off" action=""><!--preventDefault sending data form-->
+      <label for="" id="labelInput">label</label>
+      <input type="text" id="agentNumber" placeholder="agent number">
+      <input type="text" id="agentName" placeholder="agent name...">
+      <input type="text" id="agentStatus" list="status" placeholder="status...">
+      <datalist id="status">
+        <option value="active">
+        <option value="unactive">
+        </datalist>
+      <button id="btnAdd">Add</button>
+    </form>
+    </div><!--inputFields-->
+    <div class="tableDiv">
+      <table class="arrayTable">
+        <thread>
+            <tr id="trowID">
+              <th>Number <button>o</button></th>
+              <th>Name <button>o</button></th>
+              <th>Status <button>o</button></th>
+            </tr>
+          </thead>
+          <tbody id="tbodyID"></tbody>
+        </thread>
+      </table>
+    </div>
+  </div><!--wrapper-->
+  <script src="script.js"></script>
+</body>
+</html>
