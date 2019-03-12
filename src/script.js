@@ -22,17 +22,7 @@ function errorHandling (a, b, c) {
     return true
   }
 }
-
-function readFormData () {
-  var formData = {}
-  formData['number'] = document.getElementById('agentNumber').value
-  formData['name'] = document.getElementById('agentName').value
-  formData['salstatusary'] = document.getElementById('agentStatus').value
-  console.log(formData)
-  return formData
-}
-
-var formSubmit = function () {
+function formSubmit () {
   var a = document.getElementById('agentNumber').value
   var b = document.getElementById('agentName').value
   var c = document.getElementById('agentStatus').value
@@ -40,12 +30,32 @@ var formSubmit = function () {
     return
   }
   console.log('test')
-  readFormData()
+  var formData = readFormData()
+  insertNewRecord(agentList[0])
+  insertNewRecord(formData)
 }
 
+function readFormData () {
+  var formData = {}
+  formData['agentNumber'] = document.getElementById('agentNumber').value
+  formData['agentName'] = document.getElementById('agentName').value
+  formData['agentStatus'] = document.getElementById('agentStatus').value
+  console.log(formData)
+  return formData
+}
 
-
-
+function insertNewRecord (data) {
+  var table = document.getElementById('agentList').getElementsByTagName('tbody')[0]
+  var newRow = table.insertRow(table.length)
+  cell1 = newRow.insertCell(0)
+  cell1.innerHTML = '<input type="checkbox"></input>'
+  cell2 = newRow.insertCell(1)
+  cell2.innerHTML = data.agentNumber
+  cell3 = newRow.insertCell(2)
+  cell3.innerHTML = data.agentName
+  cell4 = newRow.insertCell(3)
+  cell4.innerHTML = data.agentStatus
+}
 
 // for easier testing
 window.onload = function () {
