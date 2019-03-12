@@ -7,6 +7,7 @@ CRUD vanilla JS project
 Web app, which displays array's data (objects) as HTML table. Buttons in the table head allows to sort the rows.
 
 Table content: ID number of intelligence agents, their names and status.
+
 | Agent's ID | Agents Name     | Agent's status |
 | ---------- | --------------- | -------------- |
 | 999        | Eric Cartman    | inactive       |
