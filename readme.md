@@ -1,31 +1,13 @@
-# Size Limit [![Cult Of Martians][wip-badge]][cult]
+# Create, Read, Update and Delete [![wip-badge]]
 
 <img src="https://i.imgur.com/N7cuEWS.png" align="right"
-     title="js crud table" width="120" height="178">
-
-Size Limit is a tool to prevent JavaScript libraries bloat.
-With it, you know exactly for how many kilobytes your JS library
-increases the user bundle.
-
-You can add Size Limit to your continuous integration service
-(such as Travis CI) and set the limit. If you accidentally
-add a massive dependency, Size Limit will throw an error.
-
-<p align="center">
-  <img src="./img/example.png" alt="Size Limit example"
-       width="654" height="450">
-</p>
-
-
-
-[Size Limit: Make the Web lighter]: https://evilmartians.com/chronicles/size-limit-make-the-web-lighter
-[wip-badge]:                         https://img.shields.io/badge/WIP-work%20in%20progress-yellow.svg
-[cult]:                             http://cultofmartians.com/tasks/size-limit-config.html
-
-
-# Create, Read, Update and Delete
+     title="js crud table" width="163" height="178">
 
 CRUD vanilla JS project
+
+
+[wip-badge]:                        https://img.shields.io/badge/WIP-work%20in%20progress-yellow.svg
+
 
 ### Task
 
