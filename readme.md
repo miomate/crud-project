@@ -1,9 +1,9 @@
-# Create, Read, Update and Delete [![wip-badge]]
+# Create, Read, Update and Delete [wip-badge]
 
-<img src="https://i.imgur.com/N7cuEWS.png" align="right"
+<img src="blob:https://imgur.com/302e4852-f79c-4a0a-ba78-915a2afe213c" align="right"
      title="js crud table" width="163" height="178">
 
-CRUD vanilla JS project
+CRUD vanilla JS project, HTML table with buttons in table head, which allow to sort the content of the column.
 
 
 [wip-badge]:                        https://img.shields.io/badge/WIP-work%20in%20progress-yellow.svg
