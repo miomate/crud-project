@@ -1,15 +1,16 @@
 var agentList = [
   {
-    agentNumber: 1, // format should be 000
+    agentNumber: 8, // format should be 000
     agentName: 'Peter Pan',
     agentStatus: true // if t. show active, if f. inactve
   },
   {
-    agentNumber: 8,
+    agentNumber: 3,
     agentName: 'Eric Cartman',
     agentStatus: false
   }
 ]
+var userInputAgentList = []
 
 function errorHandling (a, b, c) {
   if (
@@ -31,7 +32,6 @@ function formSubmit () {
   }
   console.log('test')
   var formData = readFormData()
-  insertNewRecord(agentList[0])
   insertNewRecord(formData)
 }
 
@@ -57,8 +57,11 @@ function insertNewRecord (data) {
   cell4.innerHTML = data.agentStatus
 }
 
-// for easier testing
+// fill the table with existing array obj
 window.onload = function () {
+  for (var i = 0; i < agentList.length; i++) {
+    insertNewRecord(agentList[i])
+  }
   document.getElementById('agentNumber').value = 'a'
   document.getElementById('agentName').value = 'b'
   document.getElementById('agentStatus').value = 'active'
