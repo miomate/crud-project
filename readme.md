@@ -11,8 +11,6 @@ CRUD vanilla JS project, HTML table with buttons in table head, which allow to s
 
 ### Task
 
-Web app, which displays array's data (objects) as HTML table. Buttons in the table head allows to sort the rows.
-
 Table content: ID number of intelligence agents, their names and status.
 
 | Agent's ID | Agents Name     | Agent's status |
