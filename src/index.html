@@ -11,8 +11,8 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="inputFields">
-      <form onsubmit="event.preventDefault(); formSubmit();" autocomplete="off" action=""><!--preventDefault sending data form-->
+    <!--<div class="inputFields">
+      <form onsubmit="event.preventDefault(); formSubmit();" autocomplete="off" action=""><!--preventDefault sending data form
       <label for="" id="labelInput">label</label>
       <input type="text" id="agentNumber" placeholder="agent number">
       <input type="text" id="agentName" placeholder="agent name...">
@@ -23,22 +23,36 @@
         </datalist>
       <button id="btnAdd">Add</button>
     </form>
-    </div><!--inputFields-->
+    </div><!--inputFields--> 
     <div class="tableDiv">
       <table class="arrayTable" id="agentList">
         <thread>
             <tr id="trowID">
-              <th></th>
-              <th>Number <button>o</button></th>
-              <th>Name <button>o</button></th>
-              <th>Status <button>o</button></th>
+              <th>Age <button class="sortButtons" id="btnSortAge">o</button></th>
+              <th>Name <button class="sortButtons" id="btnSortName" >o</button></th>
+              <th>Status <button class="sortButtons" id="btnSortStatus" >o</button></th>
             </tr>
           </thead>
           <tbody id="tbodyID"></tbody>
+          <tr>
+            <th>
+              <select id="select" onchange="itemsPerPage()">
+                <label for="">test</label>
+                <option value="all" >All</option>
+                <option value="two" selected="selected">10</option>
+                <option value="three">20</option>
+              </select> 
+            </th>
+            <th>rows per page</th>
+            <th id="thNextPageBtn"><button id="previousPageBtn">L</button><button id="nextPageBtn">R</button></th>
+            <!-- here should appear <th><button><</button><button>></button></th>-->
+          </tr>
         </thread>
       </table>
     </div>
   </div><!--wrapper-->
   <script src="script.js"></script>
+  <script src="determin-num-pages.js"></script> 
 </body>
 </html>
+
