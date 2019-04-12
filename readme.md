@@ -41,6 +41,9 @@ Table content: ID number of intelligence agents, their names and status.
 - HTML Table build based on data in array
 - Sort through array (A-Z, Z-A, 1-9, 9-1)
 - Style
+- Calculate how much pages needed, if usear want see two per page
+- Show current and max page, with working next/previous page
+- Split table to multiple pages
 
 Others:
 
