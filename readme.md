@@ -12,6 +12,8 @@ CRUD vanilla JS project, HTML table with buttons in table head, which allow to s
 Missing: 
 - Turning pages, items aren't hidden when user turns the page.
 - Buttons which show if sorting is ascending or descending (▲ or ▼).
+- Checkbox, which highlight whole row
+- JSDoc
 
 
 
@@ -21,7 +23,7 @@ Missing:
 
 ![](version_preview.gif)
 
-### Task
+### Draft
 
 Table content: ID number of intelligence agents, their names and status.
 
