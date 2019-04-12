@@ -8,6 +8,10 @@ CRUD vanilla JS project, HTML table with buttons in table head, which allow to s
 
 [wip-badge]:                        https://img.shields.io/badge/WIP-work%20in%20progress-yellow.svg
 
+### Project completed
+Missing: Turning pages, items aren't hidden when user turns the page.
+
+![](version_preview.gif)
 
 ### Task
 
