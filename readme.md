@@ -6,10 +6,18 @@
 CRUD vanilla JS project, HTML table with buttons in table head, which allow to sort the content of the column.
 
 
-[wip-badge]:                        https://img.shields.io/badge/WIP-work%20in%20progress-yellow.svg
+[wip-badge]:                         https://img.shields.io/badge/status-stable-green.svg
 
 ### Project completed
-Missing: Turning pages, items aren't hidden when user turns the page.
+Missing: 
+- Turning pages, items aren't hidden when user turns the page.
+- Buttons which show if sorting is ascending or descending (▲ or ▼).
+
+
+
+
+
+
 
 ![](version_preview.gif)
 
