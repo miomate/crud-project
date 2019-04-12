@@ -6,50 +6,30 @@ var agentList = [
   },
   {
     agentAge: 2,
-    agentName: 'Deric Cartman',
+    agentName: 'Albart Cartman',
     agentStatus: false
   },
   {
     agentAge: 1,
-    agentName: 'Alb McCormick',
+    agentName: 'Albert McCormick',
     agentStatus: true
   },
   {
     agentAge: 3,
     agentName: 'Byle Broflovski',
     agentStatus: false
+  },
+  {
+    agentAge: 2,
+    agentName: 'Stanley Marsh',
+    agentStatus: true
   }
-  // {
-  //   agentAge: 2,
-  //   agentName: 'Stanley Marsh',
-  //   agentStatus: true
-  // }
 ]
 
-// btnAdd.addEventListener('click', submitInformation)
-// fill the table with existing array obj
 window.onload = function () {
   buildTable()
-  determinNumberPages()
-}
-//function index first 5 elements class group1, next 5 class group2, show all, all groups display, if group2, others display none
-function buildTable () {
-  for (var i = 0; i < agentList.length;  i++) { //&& i < 3, the value of dropdown can be coded in here
-    insertNewRecord(agentList[i])
-  }
-}
-function emptyTabel () {
-  // var elmtTable = document.getElementById('agentList')
-  // var tableRows = elmtTable.getElementsByTagName('tr')
-  // var rowCount = tableRows.length
-
-  // for (var x = rowCount - 1; x > 0; x--) {
-  //   elmtTable.removeChild(tableRows[x])
-  // }
-
-  var table = document.getElementById('agentList').getElementsByTagName('tbody')[1]
-  var emptyTabel = document.createElement('tbody')
-  table.parentNode.replaceChild(emptyTabel, table)
+  // showNavigation(1)
+  dropDownMenu()
 }
 
 function tableReady() {
@@ -57,21 +37,30 @@ function tableReady() {
   buildTable()
 }
 
+function buildTable () {
+  for (var i = 2; i < 4 && i < agentList.length; i++) { 
+    insertNewRecord(agentList[i])
+  }
+}
+function emptyTabel () {
+  var table = document.getElementById('agentList').getElementsByTagName('tbody')[1]
+  var emptyTabel = document.createElement('tbody')
+  table.parentNode.replaceChild(emptyTabel, table)
+}
+
 function insertNewRecord (data) {
   var table = document.getElementById('agentList').getElementsByTagName('tbody')[1]
   var newRow = table.insertRow(table.length)
 
   var cell1 = newRow.insertCell(0)
-  cell1.innerHTML = '<input type="checkbox"></input>'
+  cell1.innerHTML = '<input type="checkbox"></input>'+ data.agentAge 
   var cell2 = newRow.insertCell(1)
-  cell2.innerHTML = data.agentAge
+  cell2.innerHTML = data.agentName
   var cell3 = newRow.insertCell(2)
-  cell3.innerHTML = data.agentName
-  var cell4 = newRow.insertCell(3)
-  cell4.innerHTML = data.agentStatus
+  cell3.innerHTML = data.agentStatus
+  
 }
 
-// three sort functions
 function sortAge (a, b) {
   const varA = a.agentAge
   const varB = b.agentAge
@@ -86,7 +75,7 @@ function sortAge (a, b) {
   return comparison
 }
 
-function sortName (a, b) { //source is array agentList
+function sortName (a, b) { 
 
   const varA = a.agentName.toUpperCase() // normalisation
   const varB = b.agentName.toUpperCase()
@@ -104,15 +93,7 @@ function sortName (a, b) { //source is array agentList
 function sortStatus (a, b) {
   return b.agentStatus - a.agentStatus
 }
-// end of three sorting functions
 
-
-/*
-btnSortAge
-btnSortName
-btnSortStatus
-agentList.reverse();
-*/
 function sortAge (a, b) {
   const varA = a.agentAge
   const varB = b.agentAge
@@ -133,8 +114,7 @@ var y = 0;
 
 function handleClick (e) {
   var id = e.target.id
-  console.log("beginning of handelclick() x is" + x)
-  //if another botton is hit, reset each value
+  
   function isOdd(num) {  
     return  num % 2; 
   }
@@ -147,7 +127,6 @@ function handleClick (e) {
     x++;
     y = 0;
     z = 0;
-    console.log("1 x is " + x)
     return
 
     } else {
@@ -156,7 +135,6 @@ function handleClick (e) {
       x++;
       y = 0;
       z = 0;
-    console.log("0 x is " + x)
 
     }
       break
@@ -207,31 +185,31 @@ for (let button of buttons) {
 // var select = document.getElementById("select");
 function itemsPerPage () {
   var a = document.getElementById("select").value
-  var thNextPageBtn = document.getElementById('thNextPageBtn')
-  if(a === 'all'){
-    thNextPageBtn.style.display = 'none';
-  } else {
-    thNextPageBtn.style.display = 'block';
-
-  }
-  console.log(a)
+ 
 }
 // for each (var item in children) {
 //   children[item].setAttribute("class", "democlass"); 
 // }
 function createID () {
 
-var c = document.getElementById("tbodyID").childElementCount;
-var a = document.querySelector('#tbodyID');
+var c = document.getElementById("tbodyID").childElementCount
+var a = document.querySelector('#tbodyID')
 var children = a.children;
 
 var idName = "newid"
 for (var i = 0; i <  c; i++) {
         console.log(children[i])
-        children[i].id= idName;
+        children[i].id= idName
         //don't work   this.id = "newid";
     }
 }
+
+// -clean code, functions var well named, rowers per page raus, 
+// -push repository
+// -tip top max approved
+// -readme write
+
+
 /*
 
 ---

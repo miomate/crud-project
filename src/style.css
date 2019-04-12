@@ -1,0 +1,26 @@
+table {
+  font-family: arial, sansserif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#trowID {
+  background-color: #d7dae0;
+}
+#thNextPageBtn button {
+  display: inline-block;
+}
+
+p{
+  display: inline-block;
+}

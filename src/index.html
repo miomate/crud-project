@@ -6,7 +6,7 @@
   <meta name="description" content="Text">
   <meta name="keywords" content="Key words">
   <meta name="author" content="Name Author">
-  <title>Title</title>
+  <title>CRUD Project</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -36,23 +36,31 @@
           <tbody id="tbodyID"></tbody>
           <tr>
             <th>
-              <select id="select" onchange="itemsPerPage()">
+              <select id="select" onchange="dropDownMenu(), calcMaxPage()">
                 <label for="">test</label>
-                <option value="all" >All</option>
-                <option value="two" selected="selected">10</option>
-                <option value="three">20</option>
+                <option value="1" selected="selected">All</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
               </select> 
             </th>
             <th>rows per page</th>
-            <th id="thNextPageBtn"><button id="previousPageBtn">L</button><button id="nextPageBtn">R</button></th>
-            <!-- here should appear <th><button><</button><button>></button></th>-->
+            <th class="thNavigation" id="test" onchange="calcMaxPage()">
+              <button id="leftPageBtn">L</button>
+              <button id="rightPageBtn">R</button>
+              <p id="currentPageDisplay">0</p>
+              <p id="maxPageDisplay">0</p>
+              </th>
+            
+            
           </tr>
         </thread>
       </table>
     </div>
   </div><!--wrapper-->
   <script src="script.js"></script>
-  <script src="determin-num-pages.js"></script> 
+  <script src="pages.js"></script> 
+  <script src="tableNavigation.js"></script> 
+
 </body>
 </html>
 
