@@ -8,21 +8,14 @@ which allow to sort the content of the column.
 
 [badge]: https://img.shields.io/badge/status-stable-green.svg
 
-
-[wip-badge]:                         https://img.shields.io/badge/status-stable-green.svg
-
 ### Project completed
-Missing: 
+
+Missing:
+
 - Turning pages, items aren't hidden when user turns the page.
-- Buttons which show if sorting is ascending or descending (▲ or ▼).
-- Checkbox, which highlight whole row
+- Proper buttons icons, which show if sorting is ascending or descending (▲ or ▼).
+- Checkbox, which highlight selected row
 - JSDoc
-
-
-![](version_preview.gif)
-
-### Draft
-
 
 ![](xgithub/crud.gif)
 
